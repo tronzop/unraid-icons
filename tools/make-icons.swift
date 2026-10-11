@@ -105,3 +105,7 @@ for (name, file) in [("mosquitto", "mosquitto"), ("StirlingPDF", "stirling-pdf")
                      ("rawe-ceek-watchtower", "watchtower"), ("upsnap", "upsnap")] {
     render(name) { drawFit(img(file), in: $0.insetBy(dx: 16, dy: 16)) }
 }
+render("TimeMachine") { r in
+    gradientTile(rgb(52, 199, 89), rgb(18, 96, 52), r)
+    symbol("clock.arrow.trianglehead.counterclockwise.rotate.90", r.insetBy(dx: 92, dy: 92), .white)
+}
