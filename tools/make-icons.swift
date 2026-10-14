@@ -90,6 +90,11 @@ render("chdman") { r in
     symbol("opticaldisc", NSRect(x: 106, y: 170, width: 300, height: 260), .white, weight: .regular)
     label("CHD", NSRect(x: 0, y: 50, width: px, height: 120), size: 104)
 }
+render("tailnet-sites") { r in
+    gradientTile(rgb(64, 72, 88), rgb(18, 20, 26), r)
+    symbol("globe", NSRect(x: 106, y: 170, width: 300, height: 260), .white, weight: .regular)
+    label("TAILNET", NSRect(x: 0, y: 50, width: px, height: 120), size: 84)
+}
 render("whisper") { r in
     gradientTile(rgb(20, 184, 166), rgb(14, 90, 110), r)
     symbol("waveform", r.insetBy(dx: 96, dy: 96), .white)
