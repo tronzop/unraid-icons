@@ -114,3 +114,8 @@ render("TimeMachine") { r in
     gradientTile(rgb(52, 199, 89), rgb(18, 96, 52), r)
     symbol("clock.arrow.trianglehead.counterclockwise.rotate.90", r.insetBy(dx: 92, dy: 92), .white)
 }
+render("forgejo") { drawFit(img("forgejo"), in: $0.insetBy(dx: 16, dy: 16)) }
+render("forgejo-runner") { r in
+    drawFit(img("forgejo"), in: r.insetBy(dx: 16, dy: 16))
+    badge(rgb(48, 176, 92)) { symbol("play.fill", $0, .white, weight: .bold) }
+}
