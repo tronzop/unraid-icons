@@ -119,3 +119,8 @@ render("forgejo-runner") { r in
     drawFit(img("forgejo"), in: r.insetBy(dx: 16, dy: 16))
     badge(rgb(48, 176, 92)) { symbol("play.fill", $0, .white, weight: .bold) }
 }
+render("n64-control") { r in
+    gradientTile(rgb(124, 58, 237), rgb(46, 16, 101), r)
+    symbol("gamecontroller.fill", NSRect(x: 76, y: 176, width: 360, height: 260), .white)
+    label("CTL", NSRect(x: 0, y: 50, width: px, height: 120), size: 104)
+}
